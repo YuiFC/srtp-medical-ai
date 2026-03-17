@@ -1,0 +1,38 @@
+信度分析报告
+==================================================
+
+感知易感性:
+  题目数: 4
+  Cronbach's α: -0.0437
+  解释: 不可接受 (Unacceptable)
+
+感知严重性:
+  题目数: 4
+  Cronbach's α: -0.2764
+  解释: 不可接受 (Unacceptable)
+
+感知益处:
+  题目数: 5
+  Cronbach's α: -0.0099
+  解释: 不可接受 (Unacceptable)
+
+感知障碍:
+  题目数: 6
+  Cronbach's α: 0.0439
+  解释: 不可接受 (Unacceptable)
+
+行动线索:
+  题目数: 4
+  Cronbach's α: 0.0199
+  解释: 不可接受 (Unacceptable)
+
+自我效能:
+  题目数: 4
+  Cronbach's α: -0.1536
+  解释: 不可接受 (Unacceptable)
+
+AI接受度:
+  题目数: 5
+  Cronbach's α: -0.1770
+  解释: 不可接受 (Unacceptable)
+

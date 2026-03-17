@@ -1,0 +1,30 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             AI接受度_mean   R-squared:                       0.032
+Model:                            OLS   Adj. R-squared:                 -0.030
+Method:                 Least Squares   F-statistic:                    0.5194
+Date:                Thu, 12 Mar 2026   Prob (F-statistic):              0.792
+Time:                        15:02:32   Log-Likelihood:                -65.175
+No. Observations:                 100   AIC:                             144.4
+Df Residuals:                      93   BIC:                             162.6
+Df Model:                           6                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          3.6457      0.908      4.014      0.000       1.842       5.449
+感知易感性_mean     0.0375      0.090      0.415      0.679      -0.142       0.217
+感知严重性_mean    -0.0297      0.098     -0.303      0.762      -0.224       0.165
+感知益处_mean     -0.1413      0.137     -1.032      0.305      -0.413       0.131
+感知障碍_mean      0.0081      0.106      0.076      0.939      -0.203       0.219
+行动线索_mean      0.0177      0.086      0.205      0.838      -0.154       0.189
+自我效能_mean      0.0988      0.092      1.078      0.284      -0.083       0.281
+==============================================================================
+Omnibus:                        3.388   Durbin-Watson:                   1.767
+Prob(Omnibus):                  0.184   Jarque-Bera (JB):                2.720
+Skew:                          -0.353   Prob(JB):                        0.257
+Kurtosis:                       3.393   Cond. No.                         160.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
