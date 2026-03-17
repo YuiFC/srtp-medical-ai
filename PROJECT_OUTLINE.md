@@ -1,6 +1,10 @@
 # SRTP项目工作大纲
 # 多模态AI解读放射学报告对患者健康信念的影响研究
 
+## 项目仓库
+- **GitHub**: https://github.com/YuiFC/srtp-medical-ai
+- **同步规范**: 每次代码更新后务必 `git add .` → `git commit -m "描述"` → `git push`
+
 ## 一、项目目标
 探究多模态AI（结合影像+文本）解读放射学报告对患者健康信念的影响，基于健康信念模型(HBM)进行分析。
 
