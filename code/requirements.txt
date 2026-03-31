@@ -21,3 +21,11 @@ tabulate>=0.8.0
 # 可选：结构方程模型
 # semopy>=0.5.0
 # lxml>=4.9.0
+
+# 深度学习与多模态（胸片+报告解读）
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.40.0
+Pillow>=9.0.0
+openai>=1.6.0
+python-dotenv>=1.0.0
