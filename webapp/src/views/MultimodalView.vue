@@ -12,41 +12,41 @@
             <div class="form-group">
               <label class="form-label">上传医学影像</label>
               <div class="upload-area" @click="triggerUpload">
-                <input 
-                  type="file" 
+                <input
+                  type="file"
                   ref="fileInput"
                   @change="handleFileChange"
                   accept="image/*"
-                  multiple
                   style="display: none"
                 >
-                <div v-if="form.imageList.length === 0" class="upload-placeholder">
+                <div v-if="!form.imageData" class="upload-placeholder">
                   <span class="upload-icon">📁</span>
                   <p>点击上传或拖拽文件</p>
                   <p class="upload-hint">支持 X光、CT 等医学影像</p>
                 </div>
                 <div v-else class="upload-preview">
-                  <div v-for="(img, idx) in form.imageList" :key="idx" class="preview-item">
-                    <span class="preview-name">{{ img.name }}</span>
-                    <span class="preview-remove" @click.stop="removeImage(idx)">×</span>
+                  <img :src="form.imagePreview" class="preview-image" alt="预览">
+                  <div class="preview-info">
+                    <span class="preview-name">{{ form.imageName }}</span>
+                    <span class="preview-remove" @click.stop="removeImage">×</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
+
           <div class="form-col">
             <div class="form-group">
               <label class="form-label">放射学报告文本</label>
-              <textarea 
-                v-model="form.reportText" 
+              <textarea
+                v-model="form.reportText"
                 class="form-textarea"
                 placeholder="请输入报告文本..."
               ></textarea>
             </div>
           </div>
         </div>
-        
+
         <div class="form-group">
           <label class="form-label">检查类型</label>
           <select v-model="form.examType" class="form-select">
@@ -57,43 +57,79 @@
             <option value="head_ct">头颅CT</option>
           </select>
         </div>
-        
+
         <div class="form-actions">
-          <button class="btn-primary" @click="analyzeMultimodal" :disabled="loading">
+          <button class="btn-primary" @click="analyzeMultimodal" :disabled="loading || !canAnalyze">
             {{ loading ? '分析中...' : '多模态AI联合分析' }}
           </button>
           <button class="btn-secondary" @click="resetForm">重置</button>
+        </div>
+
+        <div v-if="error" class="error-banner">
+          ⚠️ {{ error }}
         </div>
       </div>
 
       <div v-if="result" class="result-section">
         <h3>🧠 多模态AI分析结果</h3>
-        
+
         <div class="result-tabs">
-          <button 
-            :class="['tab-btn', { active: activeTab === 'image' }]"
-            @click="activeTab = 'image'"
+          <button
+            :class="['tab-btn', { active: activeTab === 'findings' }]"
+            @click="activeTab = 'findings'"
           >
-            📷 影像分析
+            🔍 主要发现
           </button>
-          <button 
-            :class="['tab-btn', { active: activeTab === 'text' }]"
-            @click="activeTab = 'text'"
+          <button
+            :class="['tab-btn', { active: activeTab === 'impression' }]"
+            @click="activeTab = 'impression'"
           >
-            📄 文本分析
+            💬 综合印象
           </button>
-          <button 
-            :class="['tab-btn', { active: activeTab === 'combined' }]"
-            @click="activeTab = 'combined'"
+          <button
+            :class="['tab-btn', { active: activeTab === 'recommendations' }]"
+            @click="activeTab = 'recommendations'"
           >
-            🔗 联合结论
+            📋 建议
+          </button>
+          <button
+            :class="['tab-btn', { active: activeTab === 'labels' }]"
+            @click="activeTab = 'labels'"
+          >
+            🏷️ CheXpert标签
           </button>
         </div>
-        
+
         <div class="tab-content">
-          <div v-show="activeTab === 'image'" v-html="result.imageAnalysis"></div>
-          <div v-show="activeTab === 'text'" v-html="result.textAnalysis"></div>
-          <div v-show="activeTab === 'combined'" v-html="result.combined"></div>
+          <div v-show="activeTab === 'findings'">
+            <div class="result-text">{{ result.findings }}</div>
+          </div>
+          <div v-show="activeTab === 'impression'">
+            <div class="result-text">{{ result.impression }}</div>
+          </div>
+          <div v-show="activeTab === 'recommendations'">
+            <div class="result-text">{{ result.recommendations }}</div>
+          </div>
+          <div v-show="activeTab === 'labels'">
+            <div class="labels-grid">
+              <div
+                v-for="(value, key) in result.chexpert_labels"
+                :key="key"
+                :class="['label-item', labelClass(value)]"
+              >
+                <span class="label-name">{{ formatLabelName(key) }}</span>
+                <span class="label-value">{{ value || 'N/A' }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-note">
+          ⚠️ 本分析仅供参考，不作为医疗诊断依据
+        </div>
+
+        <div class="result-actions">
+          <button class="btn-outline" @click="copyResult">复制结果</button>
         </div>
       </div>
     </div>
@@ -101,17 +137,24 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, computed } from 'vue'
 
 const loading = ref(false)
-const activeTab = ref('image')
+const activeTab = ref('findings')
 const fileInput = ref(null)
 const result = ref(null)
+const error = ref('')
 
 const form = reactive({
-  imageList: [],
+  imageData: null,      // base64 string
+  imagePreview: '',     // data URL for preview
+  imageName: '',
   reportText: '',
   examType: ''
+})
+
+const canAnalyze = computed(() => {
+  return form.reportText.trim().length > 0
 })
 
 const triggerUpload = () => {
@@ -119,78 +162,100 @@ const triggerUpload = () => {
 }
 
 const handleFileChange = (e) => {
-  const files = Array.from(e.target.files)
-  form.imageList = [...form.imageList, ...files]
+  const file = e.target.files[0]
+  if (!file) return
+
+  form.imageName = file.name
+
+  const reader = new FileReader()
+  reader.onload = (ev) => {
+    const dataUrl = ev.target.result
+    form.imagePreview = dataUrl
+    // 去掉 data:image/...;base64, 前缀，取纯base64
+    const base64 = dataUrl.split(',')[1]
+    form.imageData = base64
+  }
+  reader.readAsDataURL(file)
 }
 
-const removeImage = (idx) => {
-  form.imageList.splice(idx, 1)
+const removeImage = () => {
+  form.imageData = null
+  form.imagePreview = ''
+  form.imageName = ''
+  if (fileInput.value) fileInput.value.value = ''
 }
 
 const analyzeMultimodal = async () => {
-  if (!form.reportText && form.imageList.length === 0) {
-    alert('请上传影像或输入报告文本')
+  error.value = ''
+  if (!form.reportText.trim()) {
+    error.value = '请输入报告文本'
     return
   }
-  
+
   loading.value = true
-  
-  setTimeout(() => {
-    result.value = {
-      imageAnalysis: `
-        <div class="result-item">
-          <h4>📷 影像特征分析</h4>
-          <ul>
-            <li>检测到多处异常信号影</li>
-            <li>最大病灶约1.2cm，位于右肺上叶</li>
-            <li>边界清晰，密度均匀</li>
-            <li>未见明显胸腔积液</li>
-          </ul>
-        </div>
-      `,
-      textAnalysis: `
-        <div class="result-item">
-          <h4>📄 报告文本解读</h4>
-          <ul>
-            <li>双肺多发结节</li>
-            <li>最大结节位于右肺上叶</li>
-            <li>建议定期复查</li>
-          </ul>
-        </div>
-      `,
-      combined: `
-        <div class="result-item">
-          <h4>🔗 联合分析结论</h4>
-          <p>基于影像和文本的联合分析，建议：</p>
-          <ul>
-            <li><strong>综合评估：</strong>影像表现与报告描述一致</li>
-            <li><strong>复查建议：</strong>3个月后复查CT对比</li>
-            <li><strong>注意事项：</strong>如有咳嗽、胸痛等症状请及时就医</li>
-          </ul>
-        </div>
-        <div class="result-note">
-          ⚠️ 本分析仅供参考，不作为医疗诊断依据
-        </div>
-      `
+
+  try {
+    const payload = {
+      report_text: form.reportText,
+      mode: 'multimodal',
     }
+    if (form.imageData) {
+      payload.image_base64 = form.imageData
+    }
+
+    const res = await fetch('/api/analyze', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    })
+
+    if (!res.ok) {
+      const errData = await res.json().catch(() => ({ detail: '未知错误' }))
+      throw new Error(errData.detail || `请求失败 (${res.status})`)
+    }
+
+    const data = await res.json()
+    result.value = data
+    activeTab.value = 'findings'
+  } catch (err) {
+    error.value = err.message || '分析失败，请稍后重试'
+  } finally {
     loading.value = false
-    alert('多模态分析完成')
-  }, 2000)
+  }
 }
 
 const resetForm = () => {
-  form.imageList = []
+  removeImage()
   form.reportText = ''
   form.examType = ''
   result.value = null
+  error.value = ''
+  activeTab.value = 'findings'
+}
+
+const labelClass = (value) => {
+  if (value === 'positive') return 'label-positive'
+  if (value === 'negative') return 'label-negative'
+  if (value === 'uncertain') return 'label-uncertain'
+  return 'label-na'
+}
+
+const formatLabelName = (key) => {
+  // CamelCase转空格分隔
+  return key.replace(/([A-Z])/g, ' $1').trim()
+}
+
+const copyResult = () => {
+  if (!result.value) return
+  const text = `【主要发现】\n${result.value.findings}\n\n【综合印象】\n${result.value.impression}\n\n【建议】\n${result.value.recommendations}`
+  navigator.clipboard.writeText(text).then(() => {
+    alert('已复制到剪贴板')
+  })
 }
 </script>
 
 <style scoped>
-.page-container {
-  width: 100%;
-  max-width: 100%;
-}
+.page-container { width: 100%; max-width: 100%; }
 
 .page-header {
   text-align: center;
@@ -198,23 +263,10 @@ const resetForm = () => {
   background: linear-gradient(180deg, #f5f5f7 0%, white 100%);
 }
 
-.page-header h1 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #1d1d1f;
-  margin-bottom: 12px;
-}
+.page-header h1 { font-size: 40px; font-weight: 600; color: #1d1d1f; margin-bottom: 12px; }
+.page-header p { font-size: 19px; color: #86868b; }
 
-.page-header p {
-  font-size: 19px;
-  color: #86868b;
-}
-
-.content-card {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px 60px;
-}
+.content-card { max-width: 1000px; margin: 0 auto; padding: 0 20px 60px; }
 
 .form-section {
   background: white;
@@ -223,21 +275,9 @@ const resetForm = () => {
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
 
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-}
-
-.form-col {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group {
-  margin-bottom: 24px;
-  flex: 1;
-}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.form-col { display: flex; flex-direction: column; }
+.form-group { margin-bottom: 24px; flex: 1; }
 
 .form-label {
   display: block;
@@ -250,7 +290,7 @@ const resetForm = () => {
 .upload-area {
   border: 2px dashed #d2d2d7;
   border-radius: 12px;
-  padding: 40px;
+  padding: 24px;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s;
@@ -260,50 +300,17 @@ const resetForm = () => {
   justify-content: center;
 }
 
-.upload-area:hover {
-  border-color: #0071e3;
-  background: #f9f9f9;
-}
+.upload-area:hover { border-color: #0071e3; background: #f9f9f9; }
 
-.upload-placeholder {
-  color: #86868b;
-}
+.upload-placeholder { color: #86868b; }
+.upload-icon { font-size: 48px; display: block; margin-bottom: 12px; }
+.upload-hint { font-size: 13px; color: #a1a1a6; }
 
-.upload-icon {
-  font-size: 48px;
-  display: block;
-  margin-bottom: 12px;
-}
-
-.upload-hint {
-  font-size: 13px;
-  color: #a1a1a6;
-}
-
-.upload-preview {
-  width: 100%;
-}
-
-.preview-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 16px;
-  background: #f5f5f7;
-  border-radius: 8px;
-  margin-bottom: 8px;
-}
-
-.preview-name {
-  font-size: 14px;
-  color: #1d1d1f;
-}
-
-.preview-remove {
-  font-size: 20px;
-  color: #86868b;
-  cursor: pointer;
-}
+.upload-preview { width: 100%; }
+.preview-image { max-width: 100%; max-height: 160px; border-radius: 8px; margin-bottom: 8px; }
+.preview-info { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: #f5f5f7; border-radius: 8px; }
+.preview-name { font-size: 13px; color: #1d1d1f; }
+.preview-remove { font-size: 20px; color: #86868b; cursor: pointer; }
 
 .form-textarea {
   width: 100%;
@@ -317,10 +324,7 @@ const resetForm = () => {
   resize: vertical;
 }
 
-.form-textarea:focus {
-  outline: none;
-  border-color: #0071e3;
-}
+.form-textarea:focus { outline: none; border-color: #0071e3; }
 
 .form-select {
   width: 100%;
@@ -332,16 +336,9 @@ const resetForm = () => {
   cursor: pointer;
 }
 
-.form-select:focus {
-  outline: none;
-  border-color: #0071e3;
-}
+.form-select:focus { outline: none; border-color: #0071e3; }
 
-.form-actions {
-  display: flex;
-  gap: 12px;
-  margin-top: 32px;
-}
+.form-actions { display: flex; gap: 12px; margin-top: 32px; }
 
 .btn-primary {
   padding: 14px 28px;
@@ -350,19 +347,12 @@ const resetForm = () => {
   border: none;
   border-radius: 980px;
   font-size: 17px;
-  font-weight: 400;
   cursor: pointer;
   transition: all 0.3s;
 }
 
-.btn-primary:hover:not(:disabled) {
-  background: #30b350;
-}
-
-.btn-primary:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
+.btn-primary:hover:not(:disabled) { background: #30b350; }
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
 
 .btn-secondary {
   padding: 14px 28px;
@@ -373,8 +363,16 @@ const resetForm = () => {
   cursor: pointer;
 }
 
-.btn-secondary:hover {
-  text-decoration: underline;
+.btn-secondary:hover { text-decoration: underline; }
+
+.error-banner {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: #fff0f0;
+  border: 1px solid #ffcccc;
+  border-radius: 8px;
+  color: #cc0000;
+  font-size: 14px;
 }
 
 .result-section {
@@ -385,12 +383,7 @@ const resetForm = () => {
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
 
-.result-section h3 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #1d1d1f;
-  margin-bottom: 24px;
-}
+.result-section h3 { font-size: 22px; font-weight: 600; color: #1d1d1f; margin-bottom: 24px; }
 
 .result-tabs {
   display: flex;
@@ -398,6 +391,7 @@ const resetForm = () => {
   margin-bottom: 24px;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 16px;
+  flex-wrap: wrap;
 }
 
 .tab-btn {
@@ -411,35 +405,33 @@ const resetForm = () => {
   transition: all 0.3s;
 }
 
-.tab-btn.active {
-  background: #0071e3;
-  color: white;
+.tab-btn.active { background: #0071e3; color: white; }
+
+.tab-content { line-height: 1.8; color: #1d1d1f; }
+
+.result-text { font-size: 16px; line-height: 1.8; color: #1d1d1f; }
+
+.labels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
 }
 
-.tab-content {
-  line-height: 1.8;
-  color: #1d1d1f;
+.label-item {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  border-radius: 12px;
+  gap: 4px;
 }
 
-.tab-content :deep(.result-item) {
-  margin-bottom: 20px;
-}
+.label-positive { background: #ffeaea; border: 1px solid #ffcccc; }
+.label-negative { background: #eaf7ea; border: 1px solid #ccffcc; }
+.label-uncertain { background: #fff8e6; border: 1px solid #ffe4a0; }
+.label-na { background: #f5f5f7; border: 1px solid #e5e5e5; }
 
-.tab-content :deep(h4) {
-  font-size: 17px;
-  font-weight: 600;
-  color: #1d1d1f;
-  margin-bottom: 12px;
-}
-
-.tab-content :deep(ul) {
-  padding-left: 20px;
-}
-
-.tab-content :deep(li) {
-  margin-bottom: 8px;
-  color: #86868b;
-}
+.label-name { font-size: 12px; color: #86868b; }
+.label-value { font-size: 15px; font-weight: 600; color: #1d1d1f; text-transform: capitalize; }
 
 .result-note {
   background: #fff3cd;
@@ -447,21 +439,26 @@ const resetForm = () => {
   padding: 16px 20px;
   color: #856404;
   font-size: 14px;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
+.result-actions { display: flex; gap: 12px; margin-top: 16px; }
+
+.btn-outline {
+  padding: 12px 24px;
+  background: transparent;
+  color: #0071e3;
+  border: 1px solid #0071e3;
+  border-radius: 980px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-outline:hover { background: #0071e3; color: white; }
+
 @media (max-width: 768px) {
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-  
-  .page-header h1 {
-    font-size: 28px;
-  }
-  
-  .form-section,
-  .result-section {
-    padding: 24px;
-  }
+  .form-row { grid-template-columns: 1fr; }
+  .page-header h1 { font-size: 28px; }
+  .form-section, .result-section { padding: 24px; }
 }
 </style>

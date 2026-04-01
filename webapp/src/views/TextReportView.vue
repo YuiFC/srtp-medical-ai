@@ -2,22 +2,22 @@
   <div class="page-container">
     <div class="page-header">
       <h1>📄 放射学报告文本解读</h1>
-      <p>输入放射学报告，使用LLM进行智能解读分析</p>
+      <p>输入放射学报告，使用GLM-4.6V进行智能解读分析</p>
     </div>
 
     <div class="content-card">
       <div class="form-section">
         <div class="form-group">
           <label class="form-label">放射学报告文本</label>
-          <textarea 
-            v-model="form.reportText" 
+          <textarea
+            v-model="form.reportText"
             class="form-textarea"
             placeholder="请输入放射学报告内容...
 
-例如：胸部CT检查：双肺可见多个大小不等结节，最大者位于右肺上叶，直径约1.2cm，边界清晰..."
+例如：PA and lateral chest radiographs demonstrate hyperinflated lungs with flattening of the diaphragms. No focal consolidation or pleural effusion is identified."
           ></textarea>
         </div>
-        
+
         <div class="form-group">
           <label class="form-label">检查类型</label>
           <select v-model="form.examType" class="form-select">
@@ -29,21 +29,81 @@
             <option value="other">其他</option>
           </select>
         </div>
-        
+
         <div class="form-actions">
-          <button class="btn-primary" @click="analyzeReport" :disabled="loading">
+          <button class="btn-primary" @click="analyzeReport" :disabled="loading || !form.reportText.trim()">
             {{ loading ? '分析中...' : 'AI解读分析' }}
           </button>
           <button class="btn-secondary" @click="resetForm">重置</button>
+        </div>
+
+        <div v-if="error" class="error-banner">
+          ⚠️ {{ error }}
         </div>
       </div>
 
       <div v-if="result" class="result-section">
         <h3>📊 AI解读结果</h3>
-        <div class="result-content" v-html="result"></div>
+
+        <div class="result-tabs">
+          <button
+            :class="['tab-btn', { active: activeTab === 'findings' }]"
+            @click="activeTab = 'findings'"
+          >
+            🔍 主要发现
+          </button>
+          <button
+            :class="['tab-btn', { active: activeTab === 'impression' }]"
+            @click="activeTab = 'impression'"
+          >
+            💬 综合印象
+          </button>
+          <button
+            :class="['tab-btn', { active: activeTab === 'recommendations' }]"
+            @click="activeTab = 'recommendations'"
+          >
+            📋 建议
+          </button>
+          <button
+            :class="['tab-btn', { active: activeTab === 'labels' }]"
+            @click="activeTab = 'labels'"
+          >
+            🏷️ CheXpert标签
+          </button>
+        </div>
+
+        <div class="tab-content">
+          <div v-show="activeTab === 'findings'">
+            <div class="result-text">{{ result.findings }}</div>
+          </div>
+          <div v-show="activeTab === 'impression'">
+            <div class="result-text">{{ result.impression }}</div>
+          </div>
+          <div v-show="activeTab === 'recommendations'">
+            <div class="result-text">{{ result.recommendations }}</div>
+          </div>
+          <div v-show="activeTab === 'labels'">
+            <div class="labels-grid">
+              <div
+                v-for="(value, key) in result.chexpert_labels"
+                :key="key"
+                :class="['label-item', labelClass(value)]"
+              >
+                <span class="label-name">{{ formatLabelName(key) }}</span>
+                <span class="label-value">{{ value || 'N/A' }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-note">
+          <h4>🧠 解读说明</h4>
+          <p>本分析基于纯文本LLM（GLM-4.6V），仅供参考，不作为医疗诊断依据。</p>
+        </div>
+
         <div class="result-actions">
+          <button class="btn-outline" @click="copyResult">复制结果</button>
           <button class="btn-outline" @click="saveResult">保存结果</button>
-          <button class="btn-outline" @click="copyResult">复制</button>
         </div>
       </div>
     </div>
@@ -54,7 +114,9 @@
 import { ref, reactive } from 'vue'
 
 const loading = ref(false)
-const result = ref('')
+const activeTab = ref('findings')
+const result = ref(null)
+const error = ref('')
 
 const form = reactive({
   reportText: '',
@@ -62,58 +124,70 @@ const form = reactive({
 })
 
 const analyzeReport = async () => {
-  if (!form.reportText) {
-    alert('请输入报告文本')
+  error.value = ''
+  if (!form.reportText.trim()) {
+    error.value = '请输入报告文本'
     return
   }
-  
+
   loading.value = true
-  
-  // 模拟API调用
-  setTimeout(() => {
-    const examTypeName = {
-      chest_xray: '胸部X光',
-      chest_ct: '胸部CT',
-      abdomen_ct: '腹部CT',
-      head_ct: '头颅CT',
-      other: '其他'
-    }[form.examType] || '未指定'
-    
-    result.value = `
-      <div class="result-item">
-        <h4>🔍 报告分析</h4>
-        <p><strong>检查类型：</strong>${examTypeName}</p>
-      </div>
-      <div class="result-item">
-        <h4>📋 主要发现</h4>
-        <p>${form.reportText.substring(0, 300)}${form.reportText.length > 300 ? '...' : ''}</p>
-      </div>
-      <div class="result-item">
-        <h4>💡 健康建议</h4>
-        <ul>
-          <li>建议定期复查，监测病情变化</li>
-          <li>如有不适，请及时就医</li>
-          <li>保持健康生活方式</li>
-        </ul>
-      </div>
-      <div class="result-note">
-        <h4>🧠 解读说明</h4>
-        <p>本分析基于纯文本LLM，仅供参考，不作为医疗诊断依据。</p>
-      </div>
-    `
+
+  try {
+    const res = await fetch('/api/analyze', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        report_text: form.reportText,
+        mode: 'text_only',
+      }),
+    })
+
+    if (!res.ok) {
+      const errData = await res.json().catch(() => ({ detail: '未知错误' }))
+      throw new Error(errData.detail || `请求失败 (${res.status})`)
+    }
+
+    const data = await res.json()
+    result.value = data
+    activeTab.value = 'findings'
+  } catch (err) {
+    error.value = err.message || '分析失败，请稍后重试'
+  } finally {
     loading.value = false
-    alert('分析完成')
-  }, 1500)
+  }
 }
 
 const resetForm = () => {
   form.reportText = ''
   form.examType = ''
-  result.value = ''
+  result.value = null
+  error.value = ''
+  activeTab.value = 'findings'
+}
+
+const labelClass = (value) => {
+  if (value === 'positive') return 'label-positive'
+  if (value === 'negative') return 'label-negative'
+  if (value === 'uncertain') return 'label-uncertain'
+  return 'label-na'
+}
+
+const formatLabelName = (key) => {
+  return key.replace(/([A-Z])/g, ' $1').trim()
+}
+
+const copyResult = () => {
+  if (!result.value) return
+  const text = `【主要发现】\n${result.value.findings}\n\n【综合印象】\n${result.value.impression}\n\n【建议】\n${result.value.recommendations}`
+  navigator.clipboard.writeText(text).then(() => {
+    alert('已复制到剪贴板')
+  })
 }
 
 const saveResult = () => {
-  const blob = new Blob([result.value.replace(/<[^>]*>/g, '')], { type: 'text/plain' })
+  if (!result.value) return
+  const text = `【主要发现】\n${result.value.findings}\n\n【综合印象】\n${result.value.impression}\n\n【建议】\n${result.value.recommendations}\n\n【CheXpert标签】\n${JSON.stringify(result.value.chexpert_labels, null, 2)}`
+  const blob = new Blob([text], { type: 'text/plain' })
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
   a.href = url
@@ -121,22 +195,10 @@ const saveResult = () => {
   a.click()
   URL.revokeObjectURL(url)
 }
-
-const copyResult = () => {
-  const text = result.value.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim()
-  navigator.clipboard.writeText(text).then(() => {
-    alert('已复制到剪贴板')
-  }).catch(() => {
-    alert('复制失败，请手动复制')
-  })
-}
 </script>
 
 <style scoped>
-.page-container {
-  width: 100%;
-  max-width: 100%;
-}
+.page-container { width: 100%; max-width: 100%; }
 
 .page-header {
   text-align: center;
@@ -144,23 +206,10 @@ const copyResult = () => {
   background: linear-gradient(180deg, #f5f5f7 0%, white 100%);
 }
 
-.page-header h1 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #1d1d1f;
-  margin-bottom: 12px;
-}
+.page-header h1 { font-size: 40px; font-weight: 600; color: #1d1d1f; margin-bottom: 12px; }
+.page-header p { font-size: 19px; color: #86868b; }
 
-.page-header p {
-  font-size: 19px;
-  color: #86868b;
-}
-
-.content-card {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px 60px;
-}
+.content-card { max-width: 800px; margin: 0 auto; padding: 0 20px 60px; }
 
 .form-section {
   background: white;
@@ -169,9 +218,7 @@ const copyResult = () => {
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
 
-.form-group {
-  margin-bottom: 24px;
-}
+.form-group { margin-bottom: 24px; }
 
 .form-label {
   display: block;
@@ -194,10 +241,7 @@ const copyResult = () => {
   transition: border-color 0.3s;
 }
 
-.form-textarea:focus {
-  outline: none;
-  border-color: #0071e3;
-}
+.form-textarea:focus { outline: none; border-color: #0071e3; }
 
 .form-select {
   width: 100%;
@@ -209,16 +253,9 @@ const copyResult = () => {
   cursor: pointer;
 }
 
-.form-select:focus {
-  outline: none;
-  border-color: #0071e3;
-}
+.form-select:focus { outline: none; border-color: #0071e3; }
 
-.form-actions {
-  display: flex;
-  gap: 12px;
-  margin-top: 32px;
-}
+.form-actions { display: flex; gap: 12px; margin-top: 32px; }
 
 .btn-primary {
   padding: 14px 28px;
@@ -227,19 +264,12 @@ const copyResult = () => {
   border: none;
   border-radius: 980px;
   font-size: 17px;
-  font-weight: 400;
   cursor: pointer;
   transition: all 0.3s;
 }
 
-.btn-primary:hover:not(:disabled) {
-  background: #0077ed;
-}
-
-.btn-primary:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
+.btn-primary:hover:not(:disabled) { background: #0077ed; }
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
 
 .btn-secondary {
   padding: 14px 28px;
@@ -250,8 +280,16 @@ const copyResult = () => {
   cursor: pointer;
 }
 
-.btn-secondary:hover {
-  text-decoration: underline;
+.btn-secondary:hover { text-decoration: underline; }
+
+.error-banner {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: #fff0f0;
+  border: 1px solid #ffcccc;
+  border-radius: 8px;
+  color: #cc0000;
+  font-size: 14px;
 }
 
 .result-section {
@@ -262,68 +300,67 @@ const copyResult = () => {
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
 
-.result-section h3 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #1d1d1f;
+.result-section h3 { font-size: 22px; font-weight: 600; color: #1d1d1f; margin-bottom: 24px; }
+
+.result-tabs {
+  display: flex;
+  gap: 8px;
   margin-bottom: 24px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 16px;
+  flex-wrap: wrap;
 }
 
-.result-content {
-  line-height: 1.8;
-  color: #1d1d1f;
-}
-
-.result-content :deep(.result-item) {
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #f5f5f7;
-}
-
-.result-content :deep(.result-item:last-child) {
-  border-bottom: none;
-}
-
-.result-content :deep(h4) {
-  font-size: 17px;
-  font-weight: 600;
-  color: #1d1d1f;
-  margin-bottom: 12px;
-}
-
-.result-content :deep(ul) {
-  padding-left: 20px;
-}
-
-.result-content :deep(li) {
-  margin-bottom: 8px;
+.tab-btn {
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
   color: #86868b;
+  cursor: pointer;
+  transition: all 0.3s;
 }
+
+.tab-btn.active { background: #0071e3; color: white; }
+
+.tab-content { line-height: 1.8; color: #1d1d1f; }
+
+.result-text { font-size: 16px; line-height: 1.8; color: #1d1d1f; }
+
+.labels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.label-item {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  border-radius: 12px;
+  gap: 4px;
+}
+
+.label-positive { background: #ffeaea; border: 1px solid #ffcccc; }
+.label-negative { background: #eaf7ea; border: 1px solid #ccffcc; }
+.label-uncertain { background: #fff8e6; border: 1px solid #ffe4a0; }
+.label-na { background: #f5f5f7; border: 1px solid #e5e5e5; }
+
+.label-name { font-size: 12px; color: #86868b; }
+.label-value { font-size: 15px; font-weight: 600; color: #1d1d1f; text-transform: capitalize; }
 
 .result-note {
   background: #f5f5f7;
   border-radius: 12px;
   padding: 20px;
-  margin-top: 20px;
-}
-
-.result-note h4 {
-  font-size: 15px;
-  font-weight: 600;
-  color: #86868b;
-  margin-bottom: 8px;
-}
-
-.result-note p {
-  font-size: 14px;
-  color: #86868b;
-}
-
-.result-actions {
-  display: flex;
-  gap: 12px;
   margin-top: 24px;
 }
+
+.result-note h4 { font-size: 15px; font-weight: 600; color: #86868b; margin-bottom: 8px; }
+.result-note p { font-size: 14px; color: #86868b; }
+
+.result-actions { display: flex; gap: 12px; margin-top: 16px; }
 
 .btn-outline {
   padding: 12px 24px;
@@ -336,19 +373,10 @@ const copyResult = () => {
   transition: all 0.3s;
 }
 
-.btn-outline:hover {
-  background: #0071e3;
-  color: white;
-}
+.btn-outline:hover { background: #0071e3; color: white; }
 
 @media (max-width: 768px) {
-  .page-header h1 {
-    font-size: 28px;
-  }
-  
-  .form-section,
-  .result-section {
-    padding: 24px;
-  }
+  .page-header h1 { font-size: 28px; }
+  .form-section, .result-section { padding: 24px; }
 }
 </style>
