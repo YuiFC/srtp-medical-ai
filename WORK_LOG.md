@@ -2144,6 +2144,88 @@ python main_analysis.py --data data.csv --analysis regression
 4. **提交反馈数据**：将预测试数据提交至 data/external/ 目录进行信效度检验
 
 #### 本次无需AI执行的新增工作
+- 问卷预测试阶段正在等待用户收集预测试数据中
+
+---
+
+### 2026-04-01 10:10（本次人工触发）
+
+#### 完成工作
+
+##### 1. Webapp GLM API 对接完成 ✅
+- 在 `webapp/api/` 下创建了完整的 FastAPI 后端服务
+  - `api/main.py`：FastAPI 应用，含 `/api/analyze` 和 `/api/compare` 两个接口
+  - `api/analyzer.py`：GLM-4.6V 调用模块，通过独立子进程+curl实现（解决Python网络库在uvicorn环境中的超时问题）
+  - `api/glm_caller.py`：独立调用脚本，使用 curl -v 强制 HTTP/1.1 确保连接稳定
+  - `api/models.py`：Pydantic 数据模型（AnalyzeRequest、AnalysisResult、ChexpertLabels）
+- 重构 `MultimodalView.vue`：对接 `/api/analyze` 接口，支持上传图片+报告文本，调用多模态GLM-4.6V分析
+- 重构 `TextReportView.vue`：对接 `/api/analyze` 接口，支持纯文本报告分析
+- 重构 `CompareView.vue`：对接 `/api/compare` 接口，支持同时对比多模态vs纯文本分析结果
+- 配置 `vite.config.js`：添加 `/api` → `http://localhost:8000` 代理
+- `.env` 配置文件放置在 `code/.env`（供 ipynb 使用）
+
+##### 2. API 服务验证通过 ✅
+- 后端服务运行在 `http://localhost:8000`
+- 实测结果：传入Chest X光报告，GLM-4.6V 返回结构化JSON：
+  ```json
+  {
+    "findings": "胸部X光片显示双肺、心脏、纵隔、膈肌及胸膜腔未见明显异常。",
+    "impression": "胸部X光片未见明显异常。",
+    "recommendations": "建议定期体检，如有不适及时就诊。",
+    "chexpert_labels": { "Atelectasis": "negative", ... }
+  }
+  ```
+- 注意：首次冷启动约需60-90秒，后续调用会更快
+
+##### 3. 服务状态
+- Webapp (Vite): 运行在 `http://localhost:5173`
+- API 服务: 运行在 `http://localhost:8000`
+- 两个服务均已启动并正常运行
+
+#### Git 待提交状态
+- 有 2 个文件已修改未提交：`webapp/WORK_LOG.md`, `webapp/progress.md`
+- 待执行 `git add . && git commit -m "update: webapp progress"` 后推送
+
+---
+
+### 2026-04-01 11:05（本次定时任务）
+
+#### 状态确认
+- [x] 项目整体进度复查 ✅
+- [x] Git仓库状态检查 ✅
+- [x] 数据目录状态检查 ✅
+- [x] Git push 同步 ✅
+
+#### 本次工作内容
+- 复查项目整体进度：问卷设计阶段所有文档已完成，项目进入预测试等待阶段
+- 确认Git仓库状态：已提交并推送 webapp 更新（views修改 + vite配置 + api目录），master分支与远程同步
+- 确认数据目录：暂无预测试数据提交（data/external/ 仅有公开医学影像数据集.md）
+- 项目当前状态：**问卷预测试阶段，等待用户收集预测试数据**
+
+#### Git仓库状态
+- 分支：master，已同步至 GitHub
+- 本次推送：webapp: update views and vite config, add api directory (aaf5d26)
+- 远程地址：https://github.com/YuiFC/srtp-medical-ai
+
+#### 项目当前状态
+- ✅ **问卷设计阶段**：已完成（42题）
+- ✅ **访谈提纲**：已完成（10问）
+- ✅ **伦理审查材料**：已完成
+- ✅ **代码分析框架**：已完成
+- ✅ **论文框架**：已完成
+- ✅ **预测试指南**：已完成
+- ✅ **Web应用原型**：已完成（Vue3 + Vite + Element Plus，5个页面）
+- ⏳ **预测试**：待人工执行（导入腾讯问卷、邀请10-15人填答）
+- ⏳ **伦理审查申报**：待执行
+- ⏳ **正式问卷发放**：计划4-5月
+
+#### 待人工执行任务
+1. **问卷导入腾讯问卷**：将 docs/questionnaire_online_format.md 内容手动导入
+2. **邀请10-15人参与预测试**：使用 docs/pretest_guide.md 中的招募文案
+3. **收集反馈**：填答时间、理解难度、改进建议
+4. **提交反馈数据**：将预测试数据提交至 data/external/ 目录进行信效度检验
+
+#### 本次无需AI执行的新增工作
 - 问卷预测试阶段正在等待用户收集数据中
 
 ---

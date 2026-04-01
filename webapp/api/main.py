@@ -110,14 +110,25 @@ async def debug():
 
 @app.get("/debug2")
 async def debug2():
-    """Test endpoint that makes HTTP call in executor"""
-    import requests
-    def http_func():
-        r = requests.get("https://httpbin.org/get", timeout=10)
-        return r.text[:100]
+    """Test endpoint that makes HTTP call in executor via curl"""
+    import subprocess
+    import os
+    def curl_func():
+        which = subprocess.run(["which", "curl"], capture_output=True, text=True)
+        # Try with verbose output
+        r = subprocess.run(
+            ["curl", "-v", "-s", "--max-time", "15", "-X", "POST",
+             "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+             "-H", "Authorization: Bearer 77a58e2a2d204480827e878cdf7db2ef.PpNgxEjSMo3eTFKF",
+             "-H", "Content-Type: application/json",
+             "--data-raw", '{"model":"glm-4.6v","messages":[{"role":"user","content":"say hi"}]}'],
+            capture_output=True, text=True, timeout=20
+        )
+        return {"rc": r.returncode, "curl_path": which.stdout.strip(), 
+                "stdout": r.stdout[:200], "stderr": r.stderr[:500]}
     loop = asyncio.get_event_loop()
-    result = await loop.run_in_executor(_executor, http_func)
-    return {"result": result}
+    result = await loop.run_in_executor(_executor, curl_func)
+    return {"result": result, "env": dict(os.environ) if False else {"PATH": os.environ.get("PATH", "")[:50]}}
 
 
 @app.get("/health")
