@@ -78,3 +78,9 @@ RuntimeError: GLM调用失败: Traceback (most recent call last):
   File "/root/srtp_medical_ai/webapp/api/glm_caller.py", line 40, in main
   
 INFO:     127.0.0.1:37298 - "POST /api/analyze HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42754 - "GET /api/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37842 - "GET /api/cities/1 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37850 - "GET /api/1 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37858 - "GET /api/backup HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49542 - "GET /api HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38668 - "GET /api/v1/health/ HTTP/1.1" 404 Not Found
