@@ -60,7 +60,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -68,7 +68,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`c77312f` update: work log 2026-04-10 15:16
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -114,7 +115,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -122,7 +123,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`48d4ad4` update: webapp work log and progress 2026-04-10 13:13
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -169,7 +171,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -177,7 +179,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`1978c0b` update: work log 2026-04-10 12:12
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -336,7 +339,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -344,7 +347,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`9963b89` update: webapp work log 2026-04-09 20:01
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -367,7 +371,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-09）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -391,7 +395,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -400,7 +404,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`1b22281` update: work log 2026-04-09 13:14
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -423,7 +428,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-09）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -504,7 +509,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -512,7 +517,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`68e6493` update: webapp work log and progress 2026-04-09 11:06
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -535,7 +541,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-09）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -559,7 +565,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -567,7 +573,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`a578f15` update: work log and progress 2026-04-09 10:01
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -590,7 +597,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~09）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -671,7 +678,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -679,7 +686,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`f1e6d32` update: work log 2026-04-08 21:01
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -727,7 +735,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -735,7 +743,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`7d2bd19` update: webapp work log and progress 2026-04-08 19:01
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -758,7 +767,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~08）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -839,7 +848,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -847,7 +856,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`bb1a7e9` update: webapp work log 2026-04-08 14:10
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -870,7 +880,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~08）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -894,7 +904,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -902,7 +912,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`660aed9` update: webapp work log 2026-04-08 11:05
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -925,7 +936,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~08）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -949,7 +960,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -957,7 +968,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`98bc0ba` update: work log 2026-04-08 10:01
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -980,7 +992,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~08）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1002,7 +1014,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1010,7 +1022,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：无新commit，仓库已是最新状态
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1033,7 +1046,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~07）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1055,7 +1068,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1063,7 +1076,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`f4f9712` update: work log 2026-04-07 20:13
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1086,7 +1100,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~07）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1108,7 +1122,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1116,7 +1130,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`3827423` update: work log 2026-04-07 19:21
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1139,7 +1154,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~07）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1161,7 +1176,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1169,7 +1184,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`92658c9` update: webapp work log and progress 2026-04-07 18:11
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1192,7 +1208,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~07）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1214,7 +1230,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1222,7 +1238,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`3d95c92` update: work log 2026-04-07 17:10
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1245,7 +1262,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~07）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1266,14 +1283,14 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 ### 2026-04-07 16:09（本次定时任务）
 
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1281,7 +1298,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`8190f86` update: work log 2026-04-07 15:12
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1304,7 +1322,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~07）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1325,7 +1343,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1333,7 +1351,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`4dccc7a` update: webapp work log and progress 2026-04-07 15:12
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1356,7 +1375,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~07）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1378,7 +1397,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`3cd4c56` update: webapp work log and progress 2026-04-07 13:01
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1401,7 +1421,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~07）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1422,7 +1442,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1430,7 +1450,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`efe801e` update: webapp work log and progress 2026-04-07 10:01
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1453,7 +1474,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~07）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1474,7 +1495,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1482,7 +1503,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`523fffe` update: webapp work log and progress 2026-04-06 21:19
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1505,7 +1527,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~06）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1526,7 +1548,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1534,7 +1556,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`c59b5f5` update: webapp work log 2026-04-06 20:18
 - 远程地址：https://github.com/Ykityz/srtp-medical-ai
 
@@ -1557,7 +1580,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~06）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1586,7 +1609,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`6d03b57` update: webapp work log and progress 2026-04-06 19:17
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1609,7 +1633,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~06）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1638,7 +1662,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`fb2bfb8` update: webapp work log and progress 2026-04-06 18:16
 - 远程地址：https://github.com/Ykityz/srtp-medical-ai
 
@@ -1661,7 +1686,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~06）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1736,7 +1761,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1744,7 +1769,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`4f12d0c` update: work log 2026-04-06 16:13
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1767,7 +1793,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~06）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1788,7 +1814,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1796,7 +1822,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`c6404d2` update: webapp work log and progress 2026-04-06 15:12
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1819,7 +1846,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~06）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1840,7 +1867,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1848,7 +1875,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`56a4e17` update: webapp work log and progress 2026-04-06 12:06
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1871,7 +1899,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~06）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1894,7 +1922,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1902,7 +1930,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`7a79c3e` update: webapp work log and progress 2026-04-06 11:05
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1925,7 +1954,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~06）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -1946,7 +1975,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -1954,7 +1983,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`0e0a5c0` update: webapp work log and progress 2026-04-06 10:01
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -1977,7 +2007,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~06）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -2106,7 +2136,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -2114,7 +2144,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`7a4142e` update: webapp work log and progress 2026-04-05 16:17
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -2137,7 +2168,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~05）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -2211,7 +2242,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -2219,7 +2250,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`3494dbe` update: webapp work log and progress 2026-04-05 10:01
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -2242,7 +2274,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~05）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -2317,7 +2349,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**预测试正式关闭，项目进入正式数据收集阶段**
@@ -2325,7 +2357,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募正式启动（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`546f77d` update: webapp work log and progress 2026-04-04 18:16
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -2348,7 +2381,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：正式启动（目标200-300份）
 - 🚀 **访谈实施**：正式启动招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -2369,7 +2402,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**预测试正式关闭，项目进入正式数据收集阶段**
@@ -2377,7 +2410,8 @@
 - 项目当前状态：**正式问卷发放和访谈招募正式启动（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`a0a40e2` update: webapp work log and progress 2026-04-04 15:14
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -2400,7 +2434,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：正式启动（目标200-300份）
 - 🚀 **访谈实施**：正式启动招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -2421,7 +2455,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**预测试正式关闭，项目进入待审核状态**
@@ -2429,7 +2463,8 @@
 - 项目当前状态：**问卷预测试闭环完成，正式问卷和访谈正式启动准备**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`b2808fc` update: work log 2026-04-04 14:13
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -2452,7 +2487,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：正式启动准备（目标200-300份）
 - 🚀 **访谈实施**：正式启动准备（招募10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-03~04-04）
 - ✅ 预测试正式关闭，项目进入待审核状态
@@ -2525,7 +2560,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**预测试正式关闭，项目进入待审核状态**
@@ -2533,7 +2568,8 @@
 - 项目当前状态：**问卷预测试闭环完成，正式问卷和访谈正式启动准备**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`78bc0b7` update: webapp work log and progress 2026-04-04 10:01
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -2556,7 +2592,7 @@
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：正式启动准备（目标200-300份）
 - 🚀 **访谈实施**：正式启动准备（招募10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-03）
 - ✅ 预测试正式关闭，项目进入待审核状态
@@ -2576,7 +2612,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：预测试已于2026-04-01完成（34份有效问卷，信效度分析已完成，论文第四章框架已填充）
@@ -2584,7 +2620,8 @@
 - 项目当前状态：**问卷预测试阶段，信效度分析已完成，待用户审核结果并决定是否修订问卷**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`eb179d4` update: webapp work log and progress 2026-04-03 17:17
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -2623,7 +2660,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅（2个本地commit已推送至 origin/master）
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）（2个本地commit已推送至 origin/master）
 
 #### 本次工作内容
 - 复查项目整体进度：预测试已于2026-04-01完成（34份有效问卷，信效度分析已完成，论文第四章框架已填充）
@@ -2632,7 +2669,8 @@
 - 项目当前状态：**问卷预测试阶段，信效度分析已完成，待用户审核结果并决定是否修订问卷**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`c0298b2` update: work log 2026-04-03 15:12
 - `cc88479` update: webapp work log and progress 2026-04-03 15:12
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
@@ -2778,7 +2816,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：预测试已于2026-04-01完成（34份有效问卷，信效度分析已完成，论文第四章框架已填充）
@@ -2787,7 +2825,8 @@
 - 项目当前状态：**问卷预测试阶段，信效度分析已完成，待用户审核结果并决定是否修订问卷**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`0ce1999` update: webapp logs 2026-04-02 13:10
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -2828,7 +2867,7 @@
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：预测试已于2026-04-01完成（34份有效问卷，信效度分析已完成，论文第四章框架已填充）
@@ -2837,7 +2876,8 @@
 - 项目当前状态：**问卷预测试阶段，信效度分析已完成，待用户审核结果并决定是否修订问卷**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`9d37bf9` update: webapp logs 2026-04-02 11:07
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -3043,7 +3083,7 @@
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] 数据目录状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：问卷设计阶段所有文档已完成，项目进入预测试等待阶段
@@ -3052,7 +3092,8 @@
 - 项目当前状态：**问卷预测试阶段，等待用户收集预测试数据**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：update: webapp progress and work log (4e26017)
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -4985,7 +5026,7 @@ python main_analysis.py --data data.csv --analysis regression
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] 数据目录状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：问卷设计阶段所有文档已完成，项目进入预测试等待阶段
@@ -4994,7 +5035,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试阶段，等待用户收集预测试数据**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：webapp: update views and vite config, add api directory (aaf5d26)
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -5067,7 +5109,7 @@ python main_analysis.py --data data.csv --analysis regression
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] 数据目录状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：问卷设计阶段所有文档已完成，项目进入预测试等待阶段
@@ -5076,7 +5118,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试阶段，等待用户收集预测试数据**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：webapp: update views and vite config, add api directory (aaf5d26)
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -5269,7 +5312,7 @@ python main_analysis.py --data data.csv --analysis regression
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] 数据目录状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：问卷设计阶段所有文档已完成，项目进入预测试等待阶段
@@ -5278,7 +5321,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试阶段，等待用户收集预测试数据**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：update: webapp work log and progress 2026-04-01 14:09 (8ffd933)
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -5311,7 +5355,7 @@ python main_analysis.py --data data.csv --analysis regression
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] 数据目录状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：问卷预测试数据分析已于今日稍早完成（34份）
@@ -5320,7 +5364,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试阶段，信效度分析已完成，待用户审核结果并决定是否修订问卷**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：update: webapp work log 2026-04-01 17:06 (02000a1)
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -5442,7 +5487,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：预测试已于今日完成（34份有效问卷，信效度分析已完成，论文第四章框架已填充）
@@ -5450,7 +5495,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试阶段，信效度分析已完成，待用户审核结果并决定是否修订问卷**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：
   - `ec51e4d` update: work log 2026-04-01 21:05
   - `1a7167d` update: webapp work log 2026-04-01 21:05
@@ -5494,7 +5540,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：预测试已于今日完成（34份有效问卷，信效度分析已完成，论文第四章框架已填充）
@@ -5502,7 +5548,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试阶段，信效度分析已完成，待用户审核结果并决定是否修订问卷**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`bf4d166` update: webapp work log and progress 2026-04-01 22:07
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -5566,7 +5613,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：预测试已于2026-04-01完成（34份有效问卷，信效度分析已完成，论文第四章框架已填充）
@@ -5574,7 +5621,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试阶段，信效度分析已完成，待用户审核结果并决定是否修订问卷**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`4a09105` update: work log 2026-04-02 14:11
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -5613,7 +5661,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 - [x] 服务状态检查 ✅
 
 #### 本次工作内容
@@ -5623,7 +5671,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试阶段，信效度分析已完成，待用户审核结果并决定是否修订问卷**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`6fc1b16` update: webapp work log and progress 2026-04-02 15:13
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -5664,7 +5713,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 - [x] 服务状态检查 ✅
 
 #### 本次工作内容
@@ -5674,7 +5723,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试阶段，信效度分析已完成，待用户审核结果并决定是否修订问卷**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`3bc15e5` update: webapp work log 2026-04-02 21:26
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -5715,7 +5765,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 - [x] 服务状态检查 ✅
 
 #### 本次工作内容
@@ -5725,7 +5775,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试阶段，信效度分析已完成，待用户审核结果并决定是否修订问卷**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：5个本地commit已推送（277ed2d）
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -5760,7 +5811,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：预测试已于2026-04-01完成（34份有效问卷，信效度分析已完成，论文第四章框架已填充）
@@ -5769,12 +5820,14 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试阶段，信效度分析已完成，待用户审核结果并决定是否修订问卷**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`27f6098` update: webapp work log and progress 2026-04-03 12:06
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`00c2a2f` update: webapp work log and progress 2026-04-03 11:05
 - 远程地址：https://github.com/Ykityz/srtp-medical-ai
 
@@ -5816,7 +5869,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：预测试已于2026-04-01完成（34份有效问卷，信效度分析已完成，论文第四章框架已填充）
@@ -5824,7 +5877,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试阶段，信效度分析已完成，待用户审核结果并决定是否修订问卷**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`69df057` update: webapp work log and progress 2026-04-03 18:20
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -5921,7 +5975,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅（网络恢复后推送成功）
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）（网络恢复后推送成功）
 
 #### 本次工作内容
 - 复查项目整体进度：**预测试正式关闭，项目进入待审核状态**
@@ -5931,7 +5985,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试闭环完成，正式问卷和访谈正式启动准备**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`1ef5772` update: webapp work log and progress 2026-04-03 20:24
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -5954,7 +6009,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：正式启动准备（目标200-300份）
 - 🚀 **访谈实施**：正式启动准备（招募10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-03）
 - ✅ 预测试正式关闭，项目进入待审核状态
@@ -5976,7 +6031,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**预测试正式关闭，项目进入待审核状态**
@@ -5984,7 +6039,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试闭环完成，正式问卷和访谈正式启动准备**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`312ca87` update: webapp work log and progress 2026-04-03 21:27
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6007,7 +6063,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：正式启动准备（目标200-300份）
 - 🚀 **访谈实施**：正式启动准备（招募10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-03）
 - ✅ 预测试正式关闭，项目进入待审核状态
@@ -6030,7 +6086,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**预测试正式关闭，项目进入待审核状态**
@@ -6038,7 +6094,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试闭环完成，正式问卷和访谈正式启动准备**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`ad1bca1` update: work log 2026-04-03 22:33
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6061,7 +6118,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：正式启动准备（目标200-300份）
 - 🚀 **访谈实施**：正式启动准备（招募10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-03）
 - ✅ 预测试正式关闭，项目进入待审核状态
@@ -6081,7 +6138,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅（网络恢复，3个pending commits已推送）
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）（网络恢复，3个pending commits已推送）
 
 #### 本次工作内容
 - 复查项目整体进度：**预测试正式关闭，项目进入待审核状态**
@@ -6089,7 +6146,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试闭环完成，正式问卷和访谈正式启动准备**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`7bc5eba` update: webapp progress and logs 2026-04-04 11:07（3个commits批量推送）
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6112,7 +6170,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：正式启动准备（目标200-300份）
 - 🚀 **访谈实施**：正式启动准备（招募10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-03~04）
 - ✅ 预测试正式关闭，项目进入待审核状态
@@ -6133,7 +6191,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**预测试正式关闭，项目进入待审核状态**
@@ -6141,7 +6199,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**问卷预测试闭环完成，正式问卷和访谈正式启动准备**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`f64067b` update: webapp work log and progress 2026-04-04 13:12
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6164,7 +6223,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：正式启动准备（目标200-300份）
 - 🚀 **访谈实施**：正式启动准备（招募10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-03~04-04）
 - ✅ 预测试正式关闭，项目进入待审核状态
@@ -6185,7 +6244,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**预测试正式关闭，项目进入正式数据收集阶段**
@@ -6193,7 +6252,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募正式启动（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`d9d425a` update: webapp work log and progress 2026-04-04 16:15
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6216,7 +6276,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：正式启动（目标200-300份）
 - 🚀 **访谈实施**：正式启动招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -6237,7 +6297,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**预测试正式关闭，项目进入正式数据收集阶段**
@@ -6245,7 +6305,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募正式启动（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`1c84a77` update: webapp work log and progress 2026-04-04 17:16
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6268,7 +6329,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：正式启动（目标200-300份）
 - 🚀 **访谈实施**：正式启动招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -6289,7 +6350,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**预测试正式关闭，项目进入正式数据收集阶段**
@@ -6297,7 +6358,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募正式启动（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`1fee697` update: webapp work log and progress 2026-04-04 19:17
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6320,7 +6382,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：正式启动（目标200-300份）
 - 🚀 **访谈实施**：正式启动招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -6394,7 +6456,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -6402,7 +6464,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`2969337` update: webapp progress timestamp 2026-04-05 11:06
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6425,7 +6488,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-05）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段（2026-04-04）
@@ -6447,7 +6510,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -6455,7 +6518,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`5ecefb1` update: webapp work log and progress 2026-04-05 13:13
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6478,7 +6542,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~05）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -6499,7 +6563,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -6507,7 +6571,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`b97efed` update: webapp work log and progress 2026-04-05 14:15
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6530,7 +6595,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~05）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -6551,7 +6616,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -6559,7 +6624,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`38158f9` update: webapp work log and progress 2026-04-05 15:16
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6582,7 +6648,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~05）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -6604,7 +6670,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -6635,7 +6701,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-05）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -6656,7 +6722,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -6664,7 +6730,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`8086e75` update: webapp work log and progress 2026-04-05 19:22
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6687,7 +6754,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~05）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -6708,7 +6775,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -6716,7 +6783,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`34ff438` update: webapp work log and progress 2026-04-05 21:25
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6739,7 +6807,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~05）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -6760,7 +6828,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -6768,7 +6836,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`bdaa0fb` update: webapp work log and progress 2026-04-05 22:26
 - 远程地址：https://github.com/Ykityz/srtp-medical-ai
 
@@ -6791,7 +6860,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~05）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -6866,7 +6935,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -6874,7 +6943,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`007a7fa` update: webapp work log 2026-04-06 22:00
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6897,7 +6967,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~06）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -6926,7 +6996,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`2a6d218` update: webapp work log and progress 2026-04-07 12:01
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -6949,7 +7020,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~07）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -6970,7 +7041,7 @@ python main_analysis.py --data data.csv --analysis regression
 #### 状态确认
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -6978,7 +7049,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`6bd21da` update: webapp work log and progress 2026-04-07 14:06
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -7001,7 +7073,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~07）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -7078,7 +7150,7 @@ python main_analysis.py --data data.csv --analysis regression
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -7086,7 +7158,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`aaae975` update: work log 2026-04-08 13:09
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -7109,7 +7182,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~08）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -7131,7 +7204,7 @@ python main_analysis.py --data data.csv --analysis regression
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -7139,7 +7212,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`f1e6d32` update: webapp work log 2026-04-08 18:01
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -7162,7 +7236,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-04~08）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -7184,7 +7258,7 @@ python main_analysis.py --data data.csv --analysis regression
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -7192,7 +7266,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`67fac24` update: work log 2026-04-09 21:01
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -7215,7 +7290,7 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-09）
 - ✅ 预测试正式关闭，项目进入正式数据收集阶段
@@ -7236,7 +7311,7 @@ python main_analysis.py --data data.csv --analysis regression
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -7244,7 +7319,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`22f8847` update: work log 2026-04-10 17:24
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -7290,7 +7366,7 @@ python main_analysis.py --data data.csv --analysis regression
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -7298,7 +7374,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`ac84ab4` update: webapp work log and progress 2026-04-10 18:26
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -7343,7 +7420,7 @@ python main_analysis.py --data data.csv --analysis regression
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
@@ -7351,7 +7428,8 @@ python main_analysis.py --data data.csv --analysis regression
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
 - 本次推送：`384bc00` update: work log 2026-04-10 22:38
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
@@ -7396,16 +7474,17 @@ python main_analysis.py --data data.csv --analysis regression
 - [x] 项目整体进度复查 ✅
 - [x] Git仓库状态检查 ✅
 - [x] Git add + commit ✅
-- [x] Git push 同步 ✅
+- [x] Git push ⚠️（GnuTLS timeout，commit已就绪）
 
 #### 本次工作内容
 - 复查项目整体进度：**正式数据收集阶段（预测试已于2026-04-04正式关闭）**
-- 确认Git仓库状态：已提交并推送 webapp/WORK_LOG.md 和 webapp/progress.md（fd0bad9），master分支与远程同步
+- 确认Git仓库状态：已提交 webapp/WORK_LOG.md 和 webapp/progress.md（c759255），push时GnuTLS timeout
 - 项目当前状态：**正式问卷发放和访谈招募进行中（目标200-300份问卷，10-15名受访者）**
 
 #### Git仓库状态
-- 分支：master，已同步至 GitHub
-- 本次推送：`fd0bad9` update: webapp work log 2026-04-11 10:01
+- 分支：master
+- ⚠️ Push GnuTLS timeout（-110），本地 branch 领先 origin/master 1个commit
+- 本次提交：`c759255` update: work log 2026-04-11 11:15
 - 远程地址：https://github.com/YuiFC/srtp-medical-ai
 
 #### 预测试结果回顾（34份，腾讯问卷25961724，2026-04-01）
@@ -7427,11 +7506,11 @@ python main_analysis.py --data data.csv --analysis regression
 - ✅ **Q37问卷修订决策**：已完成（删除）
 - 🚀 **正式问卷发放**：进行中（目标200-300份）
 - 🚀 **访谈实施**：进行中招募（目标10-15名）
-- ✅ **Git push**：已同步至GitHub
+- ⚠️ **Git push**：GnuTLS timeout，本地commit待推送
 
 #### 里程碑更新（2026-04-11）
 - ✅ 项目进入正式数据收集第七天
-- ✅ Git push 自动化稳定运行
+- ⚠️ Git push 自动化本次GnuTLS timeout（非阻塞，本地commit已就绪）
 - 🚀 正式问卷发放和访谈招募持续进行中
 
 #### 待用户推进（下一步）
