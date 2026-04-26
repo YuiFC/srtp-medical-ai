@@ -238,3 +238,9 @@ INFO:     127.0.0.1:42848 - "GET /api/cities/1 HTTP/1.1" 404 Not Found
 INFO:     127.0.0.1:42864 - "GET /api/1 HTTP/1.1" 404 Not Found
 INFO:     127.0.0.1:42044 - "GET /api HTTP/1.1" 404 Not Found
 INFO:     127.0.0.1:59982 - "GET /api/v1/health/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43620 - "GET /api/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43624 - "GET /api/cities/1 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51154 - "GET /api/1 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51170 - "GET /api/backup HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44724 - "GET /api HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60394 - "GET /api/v1/health/ HTTP/1.1" 404 Not Found
