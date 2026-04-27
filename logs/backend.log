@@ -250,3 +250,4 @@ INFO:     127.0.0.1:54814 - "GET /api/1 HTTP/1.1" 404 Not Found
 INFO:     127.0.0.1:54816 - "GET /api/backup HTTP/1.1" 404 Not Found
 INFO:     127.0.0.1:59252 - "GET /api HTTP/1.1" 404 Not Found
 INFO:     127.0.0.1:33384 - "GET /api/v1/health/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45766 - "GET /api/geojson?url=file:///etc/hosts HTTP/1.1" 404 Not Found
